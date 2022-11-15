@@ -966,7 +966,7 @@ class GifCreator:
         print("\nCreating the GIF. (Almost done...)")
 
         file_names = sorted((fn for fn in os.listdir('.') if fn.endswith('.png')))
-        with io.get_writer('Mandala-02.gif', mode='I', duration=self.frame_duration) as writer:
+        with io.get_writer('Mandala-GIF.gif', mode='I', duration=self.frame_duration) as writer:
             for filename in file_names:
                 if filename == 'Mandala_02-030.png':
                     continue
